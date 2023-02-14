@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54abe729.css",
+    "main.js": "/static/js/main.49f4b5b7.js",
+    "static/media/workflow.md": "/static/media/workflow.4acde481c128f3b6dd00.md",
+    "static/media/syllabus.md": "/static/media/syllabus.de6d320637d8b818af58.md",
+    "index.html": "/index.html",
+    "main.54abe729.css.map": "/static/css/main.54abe729.css.map",
+    "main.49f4b5b7.js.map": "/static/js/main.49f4b5b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54abe729.css",
+    "static/js/main.49f4b5b7.js"
+  ]
+}
