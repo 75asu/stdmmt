@@ -11,13 +11,13 @@ app.use(cors());
 app.use("/students", router);
 
 // STATIC FILES
-app.use(express.static(path.join(__dirname, "./stdmgmt/build")))
 
-app.get("*", function(_, res) {
+app.use(express.static(path.join(__dirname, "./stdmgmt/build")));
+app.get("*", function (_, res) {
     res.sendFile(
-        path.join(__dirname,"./stdmgmt/build/index.html"),
-        function(err) {
-            res.status(500).send(err)
+        path.join(__dirname, "./stdmgmt/build/index.html"),
+        function (err) {
+            res.status(500).send(err);
         }
     );
 });
