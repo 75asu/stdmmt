@@ -14,7 +14,7 @@ export default function Home() {
             maxWidth={500}
             alignContent={"center"}
             alignSelf="center"
-            marginLeft={60}
+            marginLeft={"auto"}
             marginRight="auto"
             marginTop={15}
         >
