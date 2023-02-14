@@ -46,7 +46,7 @@
     "web-streams-polyfill": "^3.2.1"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asutosh Panda",
