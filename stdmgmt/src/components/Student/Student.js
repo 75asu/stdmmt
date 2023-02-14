@@ -9,7 +9,7 @@ const Student = (props) =>  {
     // delete handler
     const history = useNavigate();
     const deleteHandler = () => {
-        axios.delete(`https://api-stdmgmt.measutosh.repl.co/students/${_id}`)
+        axios.delete(`/students/${_id}`)
         .then(res => res.data)
         .then(() => history("/"))
         .then(() => history("/all"));

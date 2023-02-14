@@ -3,7 +3,7 @@ import axios from 'axios';
 import Student from './Student';
 import "./Student.css";
 // const URL = "https://api-stdmgmt.measutosh.repl.co/students";
-const URL = "https://api-stdmgmt.netlify.app/students";
+// const URL = "https://api-stdmgmt.netlify.app/students";
 
 const fetchHandler = async() => {
     return await axios.get("/students")
@@ -20,7 +20,6 @@ const Students = () => {
         fetchHandler()
         .then(data => setStudents(data.students))
     }, []);
-    // console.log(students); 
     return <ul>
             {students && students.map((student, i) => (
                 <li key={i}>

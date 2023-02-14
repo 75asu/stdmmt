@@ -35,7 +35,7 @@ const AddStudent = () => {
     //  async function, awaits till request is done, then gets res variable as a callback variable
     //  then it will send it as res.data
     const sendRequest = async () => {
-        await axios.post("https://api-stdmgmt.measutosh.repl.co/students", {
+        await axios.post("/students", {
             name: String(inputs.name),
             batch: Number(inputs.batch),
             year: Number(inputs.year),

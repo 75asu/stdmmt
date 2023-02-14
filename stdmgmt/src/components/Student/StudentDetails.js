@@ -19,7 +19,7 @@ const StudentDetails = () => {
     const id = useParams().id;
     useEffect(() => {
         const fetchHandler = async () => {
-            await axios.get(`https://api-stdmgmt.measutosh.repl.co/students/${id}`)
+            await axios.get(`/students/${id}`)
             .then((res) => res.data)
                 .then(data=>setInputs(data.student));
         };
@@ -28,7 +28,7 @@ const StudentDetails = () => {
 
     // to send the updated data to the database
     const sendRequest = async () =>  {
-        await axios.put(`https://api-stdmgmt.measutosh.repl.co/students/${id}`, {
+        await axios.put(`/students/${id}`, {
             name: String(inputs.name),
             batch: Number(inputs.batch),
             year: Number(inputs.year),
